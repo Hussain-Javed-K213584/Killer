@@ -337,7 +337,7 @@ int main(int argc, char** argv) {
 	wchar_t wtk[20];
   	mbstowcs(wtk, cLib2Name, strlen(cLib2Name)+1); //plus null
   	LPWSTR wcLib2dll = wtk;
-	HMODULE hModuleK = myGetModuleHandle(wcLib2dll));
+	HMODULE hModuleK = myGetModuleHandle(wcLib2dll);
 	
 	free(pMem);
 
